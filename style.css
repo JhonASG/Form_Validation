@@ -1,0 +1,234 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+/*Estilos para el formulario de la aplicación*/
+#Cuerpo{
+  width:100%;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.nav_title{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #006be6;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+.logo_form_humanos{
+  position: relative;
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+.title_form{
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-size: 65px;
+  text-align: center;
+  display: inline-block;
+}
+main{
+  height:100%;
+  width: 100%;
+}
+.formulario{
+  padding-top: 150px;
+}
+.label_form{
+  color: #03162c;
+  display: block;
+  font-weight: 700;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top:25px;
+  cursor:pointer;
+  text-align: center;
+}
+.input_form{
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom:45px;
+}
+.formulario_input{
+  position:absolute;
+  left:50%;
+  transform: translate(-50%, 0%);
+  width: 60%;
+  background: #fff;
+  border: 3px solid #006be6;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+  font-size: 14px;
+}
+.formulario_input:focus{
+  border: 3px solid rgba(99, 167, 255, 0.705);
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(99, 167, 255, 0.705);
+}
+.form_input_error{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 80px;
+  display: none;
+  text-align: center;
+}
+.form_input_error-activo{
+  display: block;
+}
+.form_val_state_cancel{
+  width: 30px;
+  height: 30px;
+  position:absolute;
+  left:80%;
+  transform: translate(-50%, 30%);
+  z-index: 100;
+  opacity: 0;
+}
+.form_val_state_check{
+  width: 30px;
+  height: 30px;
+  position:absolute;
+  left:80%;
+  transform: translate(-50%, 30%);
+  z-index: 100;
+  opacity: 0;
+}
+.form_mensaje, .form_group-btn{
+  grid-column: span 2;
+}
+.form_mensaje{
+  background: rgba(224, 3, 3, 0.925);
+  margin-left: 50%;
+  margin-top: 5%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 3px;
+  width: 70%;
+  transform: translate(-50%, 25%);
+  display: none;
+}
+.form_mensaje-activo{
+  display: block;
+}
+.error_m{
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  padding-left: 35px;
+}
+.adverter{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0%;
+  padding-left: 4px;
+}
+.form_mensaje p{
+  margin: 0;
+}
+.form_group-btn{
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.form_btn{
+  padding: 10px 40px 10px 40px;
+  background:#0e208a;
+  border: 3px solid #0e208a;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  width: 65%;
+  height: 54px;
+}
+.form_btn:hover{
+  box-shadow: 0px 0px 10px rgba(99, 167, 255, 0.705);
+  background:rgba(99, 167, 255, 0.705);
+  border: 3px solid rgba(99, 167, 255, 0.705);
+  height: 52px;
+}
+
+/*Estilos para validacion*/
+.form_group_correcto .form_val_state_check{
+  color: rgb(7, 233, 26);
+  opacity: 1;
+}
+.form_group_incorrecto .label_form{
+  color: rgb(233, 5, 5);
+}
+.form_group_incorrecto .form_val_state_cancel{
+  color: rgb(233, 5, 5);
+  opacity: 1;
+}
+.form_group_incorrecto .formulario_input{
+  border: 3px solid rgb(233, 5, 5);
+}
+/*Mediaqueries para adaptación de la aplicación (Web Design Responsive)*/
+@media screen and (max-width:524px){
+  .logo_form_humanos{
+    width: 60px;
+    height: 60px;
+  }
+  .label_form{
+    font-size: 24px;
+  }
+  .form_btn{
+    width: 90%;
+  }
+  .form_input_error{
+    width: 100%;
+  }
+  .first{
+    font-size: 11px;
+  }
+  .second{
+    font-size: 11px;
+  }
+  .form_mensaje{
+    width: 80%;
+  }
+  .form_mensaje p{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:340px){
+  .title_form{
+    font-size: 35px;
+  }
+  .form_btn{
+    margin-bottom: -25px;
+  }
+}
+@media screen and (max-width:227px){
+  .label_form{
+    font-size: 22px;
+  }
+  .form_btn{
+    margin-top: 25px;
+  }
+  .adverter{
+    width: 20px;
+    height: 20px;
+  }
+  .title_form{
+    font-size: 22px;
+  }
+  .logo_form_humanos{
+    width: 40px;
+    height: 40px;
+  }
+}

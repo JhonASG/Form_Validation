@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validacion formulario</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset-UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="RENO.png">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="Cuerpo">
+        <!--Contenedor del encabezado para el formulario de ingreso a la aplicación del brazo-->
+        <div class="nav_title" id="nav_title">
+            <h1 id="title_form" class="title_form">APP Formulario</h1><!--Titulo-->
+            <img src="RENO.png" class="logo_form_humanos"/><!--Logo de APP-->
+        </div>
+        <main>
+            <!--Formulario de ingreso-->
+            <form action="#" class="formulario" id="formulario">
+                <div class="form_group" id="group_name">
+                    <label for="nombre" class="label_form">Ingrese su nombre</label>
+                    <div class="input_form">
+                        <input id="nombre" type="text" class="formulario_input" name="Nombre" placeholder="Ingresa tu nombre"/>
+                        <img src="cancelar.png" class="form_val_state_cancel"/><!--Imagen que indica que se ingreso un dato erroneo-->
+                        <img src="check.png" class="form_val_state_check"/><!--Imagen que indica que se ingreso un dato correcto-->
+                    </div>
+                    <p class="first form_input_error">Debes ingresar tu nombre completo sin ningun caracter especial.</p>
+                </div>
+                <br/>
+                <!--Contenedor para la contraseña de ingreso del paciente-->
+                <div class="form_group" id="group_pass">
+                    <label for="password" class="label_form">Ingrese su clave</label>
+                    <div class="input_form">
+                        <input id="password" type="password" class="formulario_input" name="password"/>
+                        <img src="cancelar.png" class="form_val_state_cancel"/><!--Imagen que indica que se ingreso un dato erroneo-->
+                        <img src="check.png" class="form_val_state_check"/><!--Imagen que indica que se ingreso un dato correcto-->
+                    </div>
+                    <p class="second form_input_error">La clave ingresada no es la correcta.</p>
+                </div>
+                <br/>
+                <div class="form_group" id="group_Rpass">
+                    <label for="password" class="label_form">Repita su clave</label>
+                    <div class="input_form">
+                        <input type="password" id="Valpassword" class="formulario_input" name="val_password"/>
+                        <img src="cancelar.png" class="form_val_state_cancel"/>
+                        <img src="check.png" class="form_val_state_check"/>
+                    </div>
+                    <p class="third form_input_error">La clave ingresada no coincida con la ingresada anteriormente.</p>
+                </div>
+                <br/>
+                <div class="form_mensaje" id="form_mensaje">
+                    <img src="advertir.png" class="adverter"/>
+                    <p class="error_m"><b>Error: </b>Debes completar el ingreso de los datos solicitados para poder ingresar a las funcionalidades del SpesHand.</p>
+                </div>
+                <br/>
+                <div class="form_group form_group-btn">
+                    <button type="submit" class="form_btn">Ingresar</button>
+                </div>
+            </form>
+        </main>
+        <script src="page_form.js"></script>
+    </body>
+</html>

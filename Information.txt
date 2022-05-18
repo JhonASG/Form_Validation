@@ -1,0 +1,15 @@
+Validación de un formulario, donde estamos verificando el usuario, la contraseña dicha contraseña es predeterminada y además
+se valida.
+
+-> Nombre: este sera el nombre de usuario el cual no debe contener ningún espacio, ni caracter especial.
+-> Contraseña: esta es predeterminada por tanto es "estefania921"
+
+Al dar clic en ingresar genera una alerta indicando que los datos fueron registrados y se limpian todos los campos
+
+Mejoras:
+
+-> Cada usuario ingresado almacenarlo en una base de datos
+-> Luego esa información de la base de datos utilizarla para mostrarla en el DOM cada vez que le damos en ingresar
+-> Tener un boton que me permita añadir nuevos usuarios, este boton me redirecciona al formulario
+
+versión 1.0
